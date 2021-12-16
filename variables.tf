@@ -24,6 +24,6 @@ variable "versioning_enabled" {
 }
 
 variable "tags" {
-  type    = list(string)
-  default = []
+  type    = map(string)
+  default = {}
 }
