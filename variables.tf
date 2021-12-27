@@ -1,29 +1,35 @@
 variable "name" {
-  type    = string
-  default = null
+  type        = string
+  description = "Name for the S3 Bucket"
+  default     = null
 }
 
 variable "acl" {
-  type    = string
-  default = "private"
+  type        = string
+  description = "ACL for the S3 Bucket"
+  default     = "private"
 }
 
 variable "region" {
-  type    = string
-  default = "fr-par"
+  type        = string
+  description = "Region where the S3 Bucket will be created"
+  default     = "fr-par"
 }
 
 variable "zone" {
-  type    = string
-  default = "fr-par-1"
+  type        = string
+  description = "Zone where the S3 Bucket will be created"
+  default     = "fr-par-1"
 }
 
 variable "versioning_enabled" {
-  type    = bool
-  default = false
+  type        = bool
+  description = "Enable or not the versioning for the S3 Bucket"
+  default     = false
 }
 
 variable "tags" {
-  type    = map(string)
-  default = {}
+  type        = map(string)
+  description = "Map of tags for the S3 Bucket"
+  default     = {}
 }
