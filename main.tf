@@ -10,4 +10,5 @@ terraform {
 
 provider "scaleway" {
   region = var.region
+  project_id = var.project_id
 }
