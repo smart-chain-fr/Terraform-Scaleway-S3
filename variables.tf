@@ -33,3 +33,9 @@ variable "tags" {
   description = "Map of tags for the S3 Bucket"
   default     = {}
 }
+
+variable "project_id" {
+  type = string
+  description = "project ID"
+  default = null
+} 
